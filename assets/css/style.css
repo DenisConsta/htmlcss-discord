@@ -36,7 +36,14 @@ body,
   border: none;
   border-radius: 30px;
   font-weight: 500;
+  transition: 0.3s;
 }
+
+.btn:hover{
+  color:#BC07E3;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
 
 /* HEADER */
 /*tutte le height da togliere */
@@ -78,6 +85,12 @@ header div nav ul li a{
   text-decoration: none;
   font-weight: 600;
 }
+
+header div nav ul li a:hover{
+  text-decoration: underline;
+
+}
+
 
 /* hero */
 
@@ -225,6 +238,7 @@ main section.sec-4 div .cta{
 main section.sec-4 div .cta h2{
   font-size: 1.8em;
   font-weight: 700;
+  text-align: center;
 }
 
 
@@ -263,12 +277,43 @@ footer .top-footer{
 
 footer .top-footer .social{
   width: calc(100% / 3);
-
+  padding: 0px 20px;
 }
 
 footer .top-footer .social>*{
   margin-bottom: 20px;
 }
+
+footer .top-footer .icons *{
+  padding-right: 20px;
+  font-size: 1.2em;
+}
+
+footer .top-footer .icons .fa-twitter:hover{
+  color:#1DA1F2;
+}
+
+footer .top-footer .icons .fa-instagram:hover{
+  color:#BC07E3;
+}
+
+footer .top-footer .icons .fa-facebook:hover{
+  color:#1877F2;
+}
+
+footer .top-footer .icons .fa-youtube:hover{
+  color:#FF0000;
+}
+
+footer .top-footer .social .lingua img{
+  height: 15px;
+}
+
+footer .top-footer .social .lingua .fa-chevron-down{
+  font-size: .6em;
+}
+
+
 
 footer .top-footer nav{
   width: calc(100% / 6);
@@ -285,7 +330,7 @@ footer .top-footer .social h3{
 footer nav.list ul{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 footer nav.list ul li{
@@ -295,7 +340,13 @@ footer nav.list ul li{
 footer nav.list ul li a{
   color:white;
   text-decoration: none;
+  font-weight: 500;
 }
+
+footer nav.list ul li a:hover{
+  text-decoration: underline;
+}
+
 
 /* bottom-footer*/
 
@@ -305,5 +356,10 @@ footer .bottom-footer {
 }
 
 footer .bottom-footer .logo img{
-  width: 130px;
+/*   width: 130px;
+ */}
+
+ footer .bottom-footer .btn{
+  background-color: #8EA1E1;
+  color: white;
 }
