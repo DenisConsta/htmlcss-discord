@@ -45,10 +45,11 @@ body,
 
 
 .text{
-  width: 400px;
-/*   height: 400px;
- */  background-color:silver ;
-}
+/*   width: 400px;
+ *//*   height: 400px;
+ */  
+/*  background-color:silver ;
+ */}
 
 /* WAVE UP */
 /* 
@@ -199,32 +200,41 @@ main{
 /* sections */
 
 main section{
-  height: 800px;
+  padding: 120px 0px;
 }
 
 main section > div{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 main section div .mockups{
   /* da togliere */
-  width: 600px;
+  /* width: 600px;
   height: 400px;
-  background-color:coral ;
+  background-color:coral ; */
+  margin-right: 130px;
 }
 
 main section div .text{
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 20px;
 }
 
 main section div .text h2 {
-  font-size: 40px;
+  font-size: 3em;
+  line-height: 1.2em;
   margin-bottom: 30px;
+
 }
+
+main section div .text p {
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
 
 main section.sec-2 div .mockups{
   order: 1;
