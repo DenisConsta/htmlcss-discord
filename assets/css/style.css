@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
 *{
   margin: 0;
@@ -17,7 +19,9 @@
 
 body,
 .btn{
-  font-family: Arial, Helvetica, sans-serif;
+/*   font-family: Arial, Helvetica, sans-serif;
+ */  /* font-family: 'Poppins', sans-serif; */
+ font-family: Helvetica;
 }
 
 .container{
@@ -32,10 +36,11 @@ body,
 
 .btn{
   background-color: white;
-  padding: 8px 16px;
-  font-size:14px;
+  padding: 10px 15px;
+  font-size: 14px;
   border: none;
   border-radius: 30px;
+  font-weight: 500;
 }
 
 
@@ -100,7 +105,8 @@ header{
 
 header {
   height: 80px;
-  background-color: #3161E0;
+/*   background-color: #3161E0;
+ */  background-color: #255EE9;
 
 }
 
@@ -119,14 +125,14 @@ header div .logo img{
 
 header div nav ul{
   display: flex;
-  gap: 35px;
+  gap: 40px;
   list-style: none;
 }
 
 header div nav ul li a{
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* hero */
@@ -153,18 +159,37 @@ header div nav ul li a{
 }
 
 .hero div .content h1{
-  font-size: 3.8em;
+  font-size: 3.5em;
 }
 
 .hero div .content p{
   font-size: 1.4em;
   font-weight: 500;
   line-height: 1.5em;
+  margin-bottom: 30px;
 }
 
-.hero div .content > *:not(.btn){
+.hero div .content > h1{
   margin-bottom: 50px;
 }
+
+.hero div .content .btn-down,
+.btn-browser{
+  font-size: 1.4em;
+  padding: 15px 30px;
+  margin-right: 30px;
+}
+
+.hero div .content .btn-down .fa-solid{
+  font-size: .7em;
+}
+
+.hero div .content .btn-browser{
+  background-color: #23272A;
+  color: white;
+}
+
+
 
 /* MAIN */
 /*tutte le height da togliere */
